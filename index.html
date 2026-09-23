@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eliminar cuenta – NaviGeld</title>
-  <meta name="description" content="Cómo solicitar la eliminación de tu cuenta de NaviGeld y de los datos asociados.">
+  <title>Privacidad y cuenta – NaviGeld</title>
+  <meta name="description" content="Política de privacidad de NaviGeld y cómo solicitar la eliminación de tu cuenta y de los datos asociados.">
   <style>
     :root {
       --bg: #f6f7f9;
@@ -79,6 +79,23 @@
     }
     code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .95em; }
     footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 24px; }
+    nav.toc { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 16px; }
+    nav.toc a {
+      padding: 6px 12px;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: var(--card);
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .part-title { font-size: 22px; margin: 32px 0 12px; scroll-margin-top: 16px; }
+    .meta { color: var(--muted); font-size: 14px; margin: -4px 0 12px; }
+    h3 { font-size: 16px; margin: 16px 0 6px; }
+    section p { margin: 0 0 10px; }
+    section p:last-child { margin-bottom: 0; }
+    section ul + p, section p + ul { margin-top: 10px; }
     a { color: var(--accent); }
   </style>
 </head>
@@ -86,12 +103,196 @@
 <main>
   <header>
     <div class="brand">NaviGeld</div>
-    <h1>Eliminar tu cuenta y tus datos</h1>
+    <h1>Privacidad y eliminación de cuenta</h1>
     <p class="lead">
-      Esta página explica cómo solicitar la eliminación de tu cuenta de la aplicación
-      <strong>NaviGeld</strong> (desarrollada por Juan Camilo Acosta Rojas) y de los datos asociados.
+      Esta página explica qué datos recopila la aplicación <strong>NaviGeld</strong>
+      (desarrollada por Juan Camilo Acosta Rojas), cómo los usamos y almacenamos, y cómo
+      solicitar la eliminación de tu cuenta y de los datos asociados.
     </p>
+    <nav class="toc" aria-label="Contenido">
+      <a href="#privacidad">Política de privacidad</a>
+      <a href="#eliminar-cuenta">Eliminar cuenta</a>
+    </nav>
   </header>
+
+  <h2 class="part-title" id="privacidad">Política de privacidad</h2>
+  <p class="meta">Vigente desde el 23 de septiembre de 2026.</p>
+
+  <section>
+    <h2>1. Responsable del tratamiento</h2>
+    <p>
+      El responsable del tratamiento de tus datos personales es <strong>Juan Camilo Acosta Rojas</strong>,
+      desarrollador de NaviGeld. Para cualquier consulta sobre privacidad escríbenos a
+      <a href="mailto:rutalabs@gmail.com">rutalabs@gmail.com</a>.
+    </p>
+    <p>
+      Tratamos tus datos conforme a la Ley 1581 de 2012 de Colombia, el Decreto 1377 de 2013 y
+      demás normas de protección de datos personales aplicables. Al registrarte y usar la
+      aplicación autorizas el tratamiento descrito en esta política.
+    </p>
+  </section>
+
+  <section>
+    <h2>2. Datos que recopilamos</h2>
+    <h3>Datos de cuenta</h3>
+    <ul>
+      <li>Nombre de usuario, correo electrónico y rol (propietario, conductor, empresarial o administrador).</li>
+      <li>Contraseña, que se guarda cifrada con un algoritmo de hash (BCrypt); nunca la almacenamos en texto plano.</li>
+    </ul>
+    <h3>Datos de perfil (opcionales)</h3>
+    <ul>
+      <li>Nombre, apellido, teléfono, número de identificación, ciudad y departamento.</li>
+      <li>Foto de perfil: la imagen permanece en tu dispositivo; en nuestros servidores solo guardamos la referencia a ella.</li>
+    </ul>
+    <h3>Datos de vehículos y actividad</h3>
+    <ul>
+      <li>Vehículos: placa, tipo, nombre, marca, línea, modelo, color, estado y kilometraje.</li>
+      <li>Registros de kilometraje, mantenimientos (tipo, costo, descripción y fecha) y recordatorios.</li>
+      <li>Gastos e ingresos: valor, fecha, categoría y descripción, además de cierres contables mensuales y reglas de presupuesto o mantenimiento.</li>
+      <li>Vínculos entre empresas y conductores (invitaciones, fecha de ingreso y de retiro) y asignaciones de conductores a vehículos.</li>
+    </ul>
+    <h3>Datos de seguridad y del dispositivo</h3>
+    <ul>
+      <li>Historial de inicios de sesión: fecha y hora, dirección IP, navegador o dispositivo (user-agent) y si el intento fue exitoso.</li>
+      <li>Token de notificaciones push del dispositivo, tipo de dispositivo y placas asociadas, junto con un registro de las notificaciones enviadas.</li>
+    </ul>
+    <h3>Datos de uso (analítica)</h3>
+    <ul>
+      <li>
+        Usamos Firebase Analytics para registrar eventos de uso: inicio y cierre de sesión, registro,
+        pantallas visitadas, creación de vehículos, registro de gastos, ingresos y mantenimientos
+        (categoría, monto y si se adjuntó un soporte) y errores de la aplicación. Firebase también
+        recopila identificadores del dispositivo y datos técnicos básicos (modelo, sistema operativo,
+        versión de la app).
+      </li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. Permisos del dispositivo</h2>
+    <ul>
+      <li><strong>Cámara y galería:</strong> para fotografiar o seleccionar recibos, el odómetro, fotos de vehículos y tu foto de perfil.</li>
+      <li><strong>Micrófono:</strong> para dictar notas de voz y registrar gastos o ingresos.</li>
+      <li><strong>Notificaciones:</strong> para avisarte de recordatorios de mantenimiento, presupuesto y confirmaciones de registros.</li>
+    </ul>
+    <p>
+      Solo accedemos a estos recursos cuando usas la función correspondiente, y puedes revocar los
+      permisos en cualquier momento desde la configuración de tu dispositivo.
+    </p>
+    <div class="note">
+      <strong>Recibos y notas de voz:</strong> las imágenes, PDF y audios que envías para extraer datos
+      se procesan en memoria para obtener el valor, la fecha y la categoría, y <strong>no se almacenan</strong>
+      en nuestros servidores. Solo guardamos el movimiento que tú revisas y confirmas.
+    </div>
+  </section>
+
+  <section>
+    <h2>4. Para qué usamos tus datos</h2>
+    <ul>
+      <li>Crear y administrar tu cuenta, autenticarte y mantener tu sesión.</li>
+      <li>Prestar las funciones de la app: gestión de vehículos, kilometraje, mantenimientos, gastos, ingresos, cierres contables y reportes (PDF, Excel o CSV).</li>
+      <li>Permitir que empresas y propietarios gestionen a sus conductores y asignaciones de vehículos.</li>
+      <li>Extraer automáticamente datos de recibos y notas de voz.</li>
+      <li>Enviarte notificaciones sobre recordatorios, presupuestos y registros.</li>
+      <li>Proteger la cuenta y detectar accesos no autorizados.</li>
+      <li>Entender cómo se usa la aplicación, corregir errores y mejorarla.</li>
+    </ul>
+    <p>No vendemos tus datos personales ni los usamos para publicidad.</p>
+  </section>
+
+  <section>
+    <h2>5. Dónde se almacenan</h2>
+    <ul>
+      <li>
+        <strong>En nuestros servidores:</strong> la información de tu cuenta, vehículos y movimientos se
+        guarda en bases de datos PostgreSQL administradas en Google Cloud Platform (Cloud SQL), y los
+        servicios de la app se ejecutan en Google Cloud Run, en centros de datos de Estados Unidos.
+      </li>
+      <li>
+        <strong>En tu dispositivo:</strong> el token de sesión y tu preferencia de tema (claro u oscuro)
+        se guardan en el almacenamiento seguro del sistema (Keychain en iOS, Keystore en Android). El
+        estado del tutorial de bienvenida se guarda en el almacenamiento local de la app. Al cerrar
+        sesión se elimina el token.
+      </li>
+    </ul>
+    <p>
+      Como nuestros servidores y proveedores se encuentran fuera de Colombia, al usar la app autorizas
+      la transferencia internacional de tus datos a esos países, que se realiza con proveedores que
+      aplican medidas de seguridad adecuadas.
+    </p>
+  </section>
+
+  <section>
+    <h2>6. Con quién compartimos tus datos</h2>
+    <p>Solo compartimos datos con los proveedores necesarios para operar la app:</p>
+    <ul>
+      <li><strong>Google Cloud Platform:</strong> alojamiento de servidores y bases de datos.</li>
+      <li><strong>Google Firebase:</strong> analítica de uso (Firebase Analytics) y envío de notificaciones push (Firebase Cloud Messaging).</li>
+      <li><strong>OpenAI:</strong> procesa las imágenes, PDF y audios de recibos y notas de voz para extraer y clasificar los datos del movimiento.</li>
+    </ul>
+    <p>
+      Dentro de la app, otros usuarios ven datos tuyos solo cuando existe un vínculo: la empresa a la
+      que te unes como conductor ve tu nombre y correo, y los propietarios o empresas ven los registros
+      de los vehículos que te asignan. También podemos revelar información cuando lo exija una
+      autoridad competente conforme a la ley.
+    </p>
+  </section>
+
+  <section>
+    <h2>7. Seguridad</h2>
+    <ul>
+      <li>Toda la comunicación entre la app y nuestros servidores viaja cifrada mediante HTTPS.</li>
+      <li>Las contraseñas se guardan con hash BCrypt.</li>
+      <li>El acceso a la información requiere un token de sesión (JWT) que se invalida al cerrar sesión.</li>
+      <li>Cada usuario solo puede consultar la información que le corresponde según su rol.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. Conservación de los datos</h2>
+    <p>
+      Conservamos tus datos mientras tu cuenta esté activa. Si solicitas eliminar tu cuenta, los
+      datos se eliminan según se describe en la sección <a href="#eliminar-cuenta">Eliminar cuenta</a>.
+      Los datos de analítica se conservan de forma agregada según la configuración de retención de
+      Firebase.
+    </p>
+  </section>
+
+  <section>
+    <h2>9. Tus derechos</h2>
+    <p>Como titular de los datos puedes:</p>
+    <ul>
+      <li>Conocer, actualizar y rectificar tus datos (puedes editar tu perfil desde la app).</li>
+      <li>Solicitar prueba de la autorización que nos otorgaste.</li>
+      <li>Ser informado sobre el uso que damos a tus datos.</li>
+      <li>Revocar la autorización o solicitar la supresión de tus datos.</li>
+      <li>Presentar quejas ante la Superintendencia de Industria y Comercio (SIC).</li>
+    </ul>
+    <p>
+      Para ejercerlos escribe a <a href="mailto:rutalabs@gmail.com">rutalabs@gmail.com</a> desde el
+      correo registrado. Atendemos consultas en un máximo de 10 días hábiles y reclamos en un máximo
+      de 15 días hábiles.
+    </p>
+  </section>
+
+  <section>
+    <h2>10. Menores de edad</h2>
+    <p>
+      NaviGeld está dirigida a personas mayores de 18 años. No recopilamos de forma intencional datos
+      de menores; si detectamos una cuenta de un menor, la eliminaremos.
+    </p>
+  </section>
+
+  <section>
+    <h2>11. Cambios a esta política</h2>
+    <p>
+      Podemos actualizar esta política cuando cambie la aplicación o la normativa. Publicaremos la
+      nueva versión en esta página con su fecha de vigencia y, si el cambio es relevante, te
+      avisaremos en la app.
+    </p>
+  </section>
+
+  <h2 class="part-title" id="eliminar-cuenta">Eliminar tu cuenta y tus datos</h2>
 
   <section>
     <h2>Opción 1: Desde la aplicación</h2>
