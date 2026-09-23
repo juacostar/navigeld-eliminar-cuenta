@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eliminar cuenta – NaviGeld</title>
+  <meta name="description" content="Cómo solicitar la eliminación de tu cuenta de NaviGeld y de los datos asociados.">
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --card: #ffffff;
+      --text: #1d2330;
+      --muted: #5b6475;
+      --border: #e2e5ea;
+      --accent: #c62828;
+      --accent-text: #ffffff;
+      --note-bg: #fff8e1;
+      --note-border: #f0c36d;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12151b;
+        --card: #1b1f27;
+        --text: #e8eaef;
+        --muted: #a3abba;
+        --border: #2c323d;
+        --accent: #ef5350;
+        --accent-text: #ffffff;
+        --note-bg: #2a2413;
+        --note-border: #7a6224;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 32px 16px 48px;
+    }
+    header { margin-bottom: 24px; }
+    .brand { font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+    h1 { font-size: 28px; line-height: 1.25; margin: 4px 0 8px; }
+    h2 { font-size: 19px; margin: 0 0 12px; }
+    p, li { color: var(--text); }
+    .lead { color: var(--muted); margin: 0; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    ol, ul { padding-left: 22px; margin: 0; }
+    li + li { margin-top: 6px; }
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 20px;
+      background: var(--accent);
+      color: var(--accent-text);
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .btn:hover { opacity: .9; }
+    .note {
+      background: var(--note-bg);
+      border: 1px solid var(--note-border);
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin-top: 12px;
+      font-size: 15px;
+    }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: .95em; }
+    footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 24px; }
+    a { color: var(--accent); }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div class="brand">NaviGeld</div>
+    <h1>Eliminar tu cuenta y tus datos</h1>
+    <p class="lead">
+      Esta página explica cómo solicitar la eliminación de tu cuenta de la aplicación
+      <strong>NaviGeld</strong> (desarrollada por Juan Camilo Acosta Rojas) y de los datos asociados.
+    </p>
+  </header>
+
+  <section>
+    <h2>Opción 1: Desde la aplicación</h2>
+    <ol>
+      <li>Abre la aplicación NaviGeld e inicia sesión.</li>
+      <li>Ve a <strong>Perfil</strong>.</li>
+      <li>Toca <strong>Eliminar cuenta</strong>.</li>
+      <li>Confirma la eliminación.</li>
+    </ol>
+    <p>Tu cuenta quedará desactivada de inmediato y ya no podrás iniciar sesión.</p>
+  </section>
+
+  <section>
+    <h2>Opción 2: Por correo electrónico (sin instalar la app)</h2>
+    <p>
+      Si ya no tienes la aplicación instalada, envía un correo a
+      <a href="mailto:TU_CORREO_DE_SOPORTE">TU_CORREO_DE_SOPORTE</a>
+      desde la dirección de correo con la que te registraste, con el asunto
+      <em>“Solicitud de eliminación de cuenta”</em>. Incluye tu nombre de usuario.
+    </p>
+    <a class="btn"
+       href="mailto:TU_CORREO_DE_SOPORTE?subject=Solicitud%20de%20eliminaci%C3%B3n%20de%20cuenta%20-%20NaviGeld&body=Hola%2C%0A%0ASolicito%20la%20eliminaci%C3%B3n%20de%20mi%20cuenta%20de%20NaviGeld%20y%20de%20todos%20mis%20datos%20asociados.%0A%0ANombre%20de%20usuario%3A%20%0ACorreo%20registrado%3A%20%0A%0AGracias.">
+      Solicitar eliminación por correo
+    </a>
+    <div class="note">
+      Para proteger tu cuenta, solo procesamos solicitudes enviadas desde el correo registrado.
+      Responderemos confirmando la eliminación en un plazo máximo de <strong>30 días</strong>.
+    </div>
+  </section>
+
+  <section>
+    <h2>Datos que se eliminan</h2>
+    <ul>
+      <li>Datos de perfil: nombre, apellido, correo electrónico, teléfono, número de identificación, ciudad, departamento y foto de perfil.</li>
+      <li>Credenciales de acceso (contraseña cifrada) y roles asignados.</li>
+      <li>Historial de inicios de sesión (fecha, dirección IP y dispositivo).</li>
+      <li>Vinculaciones con empresas o conductores.</li>
+      <li>Vehículos, gastos e información financiera registrada en la aplicación.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Datos que se conservan y por cuánto tiempo</h2>
+    <p>
+      Tras la solicitud, la cuenta se desactiva de inmediato. Los datos personales se eliminan
+      de forma definitiva en un plazo máximo de <strong>30 días</strong>. Solo conservamos
+      la información que la ley nos obligue a mantener (por ejemplo, registros contables o de
+      seguridad), durante el tiempo que exija la normativa aplicable, y después la eliminamos.
+    </p>
+  </section>
+
+  <footer>
+    ¿Dudas? Escríbenos a <a href="mailto:TU_CORREO_DE_SOPORTE">TU_CORREO_DE_SOPORTE</a>.
+  </footer>
+</main>
+</body>
+</html>
